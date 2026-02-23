@@ -1,0 +1,6 @@
+json file upload commnd:
+aws s3 cp . s3://bucket_name/folder_name/folder_name/ --recursive --exclude "*" --include "*.json"    ----all 10 json files will be uploaded
+
+
+csv file upload command: 
+aws s3 cp . s3://bucket_name/folder_name/folder_name/ --recursive --exclude "*" --include "*.csv"     ----all 10 csv files will be uploaded
