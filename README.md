@@ -6,7 +6,7 @@ This project implements an end-to-end data engineering pipeline on AWS for proce
 
 **AWS Lambda:** It was used to perform event-driven data processing. Lambda functions were triggered automatically whenever new JSON files were uploaded to Amazon S3. The functions processed and converted the JSON data into Parquet format, enabling serverless data transformation and automation without the need to manage infrastructure.
 
-**AWS Glue:** It was used as the ETL service for processing the raw CSV datasets. Glue Crawlers were used to infer schemas and update the Data Catalog, while Glue Jobs performed data cleaning, transformation, and conversion of CSV files into optimized Parquet format, improving query performance and storage efficiency for analysis through Amazon Athena.
+**AWS Glue:** It was used as the ETL service for processing and integrating the datasets. Glue Crawlers were used to infer schemas and update the Data Catalog, while Glue Jobs performed data cleaning, transformation, and conversion of CSV files into optimized Parquet format. The ETL jobs also joined and merged the Parquet datasets generated from both the JSON and CSV sources, creating a unified curated dataset that was subsequently queried through Amazon Athena for analysis.
 
 **Amazon Athena:** It was used as the analytics layer of the project. Athena enabled serverless SQL querying directly on the transformed data stored in Amazon S3, allowing efficient analysis without the need for dedicated database infrastructure.
 
@@ -16,7 +16,7 @@ This project implements an end-to-end data engineering pipeline on AWS for proce
 ## Project Workflow
 
 ```text
-YouTube Trending Dataset
+YouTube Dataset
           │
           ▼
 Amazon S3
@@ -25,13 +25,17 @@ Amazon S3
     ┌─────┴─────┐
     ▼           ▼
 AWS Lambda   AWS Glue
-(JSON →      (CSV Processing &
- Parquet)     Transformation)
+(JSON →      (CSV →
+ Parquet)     Parquet)
     │           │
     └─────┬─────┘
           ▼
+AWS Glue ETL Job
+(Parquet Datasets Join & Merge)
+          │
+          ▼
 Amazon S3
-(Transformed Data Storage)
+(Curated Dataset)
           │
           ▼
 Amazon Athena
