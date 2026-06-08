@@ -17,6 +17,7 @@ This project implements an end-to-end data engineering pipeline on AWS for proce
 
 ## Project Workflow
 
+```text
 YouTube Trending Dataset
           │
           ▼
@@ -41,3 +42,4 @@ Amazon Athena
           ▼
 Power BI
 (Dashboard & Visualization)
+```
