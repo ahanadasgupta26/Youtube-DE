@@ -17,19 +17,19 @@ This project implements an end-to-end data engineering pipeline on AWS for proce
 
 ```text
 YouTube Dataset
-          │
+          |
           ▼
 Amazon S3
 (Raw CSV & JSON Data)
-          │
+           │
     ┌─────┴─────┐
-    ▼           ▼
+    ▼            ▼
 AWS Lambda   AWS Glue
 (JSON →      (CSV →
  Parquet)     Parquet)
-    │           │
+    │             │
     └─────┬─────┘
-          ▼
+           ▼
 AWS Glue ETL Job
 (Parquet Datasets Join & Merge)
           │
