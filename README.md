@@ -21,15 +21,15 @@ YouTube Dataset
           ▼
 Amazon S3
 (Raw CSV & JSON Data)
-           │
+          │
     ┌─────┴─────┐
     ▼            ▼
 AWS Lambda   AWS Glue
 (JSON →      (CSV →
  Parquet)     Parquet)
-    │             │
+    │           |
     └─────┬─────┘
-           ▼
+          ▼
 AWS Glue ETL Job
 (Parquet Datasets Join & Merge)
           │
