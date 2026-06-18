@@ -23,7 +23,7 @@ Amazon S3
 (Raw CSV & JSON Data)
           │
     ┌─────┴─────┐
-    ▼            ▼
+    ▼           ▼
 AWS Lambda   AWS Glue
 (JSON →      (CSV →
  Parquet)     Parquet)
