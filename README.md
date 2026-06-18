@@ -1,5 +1,7 @@
 # AWS Data Engineering for YouTube 
 
+## Overview
+
 This project implements an end-to-end data engineering pipeline on AWS for processing and analyzing YouTube trending data. The objective was to ingest raw CSV and JSON datasets, store them in a scalable cloud environment, transform and optimize the data for analytical workloads, and generate business insights through interactive dashboards. The architecture follows a modern data engineering approach by separating data ingestion, storage, transformation, querying, and visualization into distinct layers.
 
 ## Services Used
