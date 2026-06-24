@@ -17,6 +17,12 @@ This project implements an end-to-end data engineering pipeline on AWS for proce
 **Power BI:** It was used for data visualization and dashboard creation. Power BI was connected to Amazon Athena using the Amazon Athena ODBC Driver, enabling direct querying of the curated datasets stored in Amazon S3. Interactive dashboards were developed to analyze YouTube trending metrics, category performance, regional trends, and other key insights.
 
 
+## Dataset
+
+This project uses the YouTube Trending Videos Dataset, which contains daily trending video statistics from multiple countries. The dataset includes video metadata, category information, view counts, likes, dislikes, comments, publication details, and other engagement metrics that can be used for analytics and reporting.
+
+**Dataset Link:** https://www.kaggle.com/datasets/datasnaek/youtube-new
+
 ## Project Workflow
 
 ```text
