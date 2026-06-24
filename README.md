@@ -19,7 +19,7 @@ This project implements an end-to-end data engineering pipeline on AWS for proce
 
 ## Dataset
 
-This project uses the YouTube Trending Videos Dataset, which contains daily trending video statistics from multiple countries. The dataset includes video metadata, category information, view counts, likes, dislikes, comments, publication details, and other engagement metrics that can be used for analytics and reporting.
+This project uses the **Trending YouTube Video Statistics** dataset, which contains daily trending video statistics from multiple countries. The dataset includes video metadata, category information, view counts, likes, dislikes, comments, publication details, and other engagement metrics that can be used for analytics and reporting.
 
 * **Dataset Link:** https://www.kaggle.com/datasets/datasnaek/youtube-new
 
